@@ -1,0 +1,61 @@
+  <div class="sidebar" style="height: 100vh;">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[{ outlets: { admin: ['dashboard'] } }]" routerLinkActive="active">
+            <i class="nav-icon icon-speedometer"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-title">Components</li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="[{ outlets: { admin: ['students'] } }]" routerLinkActive="active">
+            <i class="nav-icon icon-pie-chart"></i> Students</a>
+        </li>
+        <li class="nav-item nav-dropdown">
+          <a class="nav-link nav-dropdown-toggle" href="#">
+            <i class="nav-icon icon-bell"></i> Subjects</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[{ outlets: {admin: ['subjects-bsc-cs'] } }]" routerLinkActive="active">
+                <i class="nav-icon icon-bell"></i> BSc CS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[{ outlets: {admin: ['subjects-bsc-is'] } }]" routerLinkActive="active">
+                <i class="nav-icon icon-bell"></i> BSc IS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[{ outlets: {admin: ['subjects-bscse-hons'] } }]"
+                routerLinkActive="active">
+                <i class="nav-icon icon-bell"></i> BSc SE Hons.</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="divider"></li>
+        <li class="nav-title">Extras</li>
+        <li class="nav-item nav-dropdown">
+          <a class="nav-link nav-dropdown-toggle" href="#">
+            <i class="nav-icon icon-star"></i> Pages</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" target="_top">
+                <i class="nav-icon icon-star"></i> Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html" target="_top">
+                <i class="nav-icon icon-star"></i> Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="404.html" target="_top">
+                <i class="nav-icon icon-star"></i> Error 404</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="500.html" target="_top">
+                <i class="nav-icon icon-star"></i> Error 500</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+  </div>
