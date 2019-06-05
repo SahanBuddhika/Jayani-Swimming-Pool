@@ -76,10 +76,12 @@ export class AdminStudentsComponent implements OnInit {
       return;
     }
     this.studentService.addItem(values).subscribe(res => {
-      this.items.push(res.item);
+      this.items.push(res['item']);
       this.studentForm.reset();
     });
   }
+
+
 
   createStudentForm() {
     this.studentForm = this.fb.group({
