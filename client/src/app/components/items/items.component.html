@@ -42,6 +42,7 @@
               </select>
               <small class="text-danger" [class.d-none]="country.valid || country.untouched">Select your country!</small>
             </div>
+
             <div class="form-group">
               <label for="contact">Contact Info</label>
               <input ngModel #contact="ngModel" id="contact" name="contact_info" type="number" class="form-control" [class.is-invalid]="contact.touched && contact.invalid" placeholder="Enter your contact info.." required>
